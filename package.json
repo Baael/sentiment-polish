@@ -1,19 +1,26 @@
 {
   "author": "Andrew Sliwinski <andrewsliwinski@acm.org>",
-  "name": "sentiment",
-  "description": "AFINN-based sentiment analysis for Node.js",
-  "version": "4.0.0",
+  "contributors": [
+    {
+      "name": "Kuba Wolanin",
+      "url": "https://github.com/kubawolanin"
+    }
+  ],
+  "name": "sentiment-polish",
+  "description": "Polish translated, AFINN-based sentiment analysis for Node.js",
+  "version": "1.0.0",
   "license": "MIT",
-  "homepage": "https://github.com/thisandagain/sentiment",
+  "homepage": "https://github.com/kubawolanin/sentiment-polish",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thisandagain/sentiment.git"
+    "url": "https://github.com/kubawolanin/sentiment-polish.git"
   },
   "keywords": [
     "sentiment",
     "analysis",
     "nlp",
-    "sentiment analysis"
+    "sentiment analysis",
+    "polish"
   ],
   "main": "./lib/index.js",
   "scripts": {

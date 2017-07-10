@@ -19,30 +19,26 @@ test('spec', function (t) {
     t.end();
 });
 
-test('english', function (t) {
+test('polish', function (t) {
     t.deepEqual(
-        tokenize('The cat went over the wall.'),
-        ['the', 'cat', 'went', 'over', 'the', 'wall']
+        tokenize('Kot przeszedł przez ścianę.'),
+        ['Kot', 'przeszedł', 'przez', 'ścianę']
     );
     t.deepEqual(
-        tokenize('That\'ll cause problems for the farmer\'s pigs'),
-        ['that\'ll', 'cause', 'problems', 'for', 'the', 'farmer\'s', 'pigs']
+        tokenize('To spowoduje problemy świniom farmera.'),
+        ['To', 'spowoduje', 'problemy', 'świniom', 'farmera']
     );
     t.end();
 });
 
 test('diacritic', function (t) {
     t.deepEqual(
-        tokenize('This approach is naïve.'),
-        ['this', 'approach', 'is', 'naïve']
+        tokenize('To podejście jest naiwne.'),
+        ['to', 'podejście', 'jest', 'naiwne']
     );
     t.deepEqual(
-        tokenize('The puppy bowl team was very coöperative.'),
-        ['the', 'puppy', 'bowl', 'team', 'was', 'very', 'coöperative']
-    );
-    t.deepEqual(
-        tokenize('The soufflé was delicious!'),
-        ['the', 'soufflé', 'was', 'delicious']
+        tokenize('Suflet był wyborny!'),
+        ['suflet', 'był', 'wyborny']
     );
     t.end();
 });
