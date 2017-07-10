@@ -1,4 +1,4 @@
-## sentiment
+## sentiment-polish
 #### AFINN-based sentiment analysis for Node.js
 
 [![Build Status](https://travis-ci.org/thisandagain/sentiment.svg?branch=develop)](https://travis-ci.org/thisandagain/sentiment)
@@ -13,12 +13,12 @@ Sentiment is a Node.js module that uses the [AFINN-165](http://www2.imm.dtu.dk/p
 
 ### Installation
 ```bash
-npm install sentiment
+npm install sentiment-polish
 ```
 
 ### Usage
 ```javascript
-var sentiment = require('sentiment');
+var sentiment = require('sentiment-polish');
 
 var r1 = sentiment('Cats are stupid.');
 console.dir(r1);        // Score: -2, Comparative: -0.666
@@ -30,7 +30,7 @@ console.dir(r2);        // Score: 4, Comparative: 1
 ### Adding / overwriting words
 You can append and/or overwrite values from AFINN by simply injecting key/value pairs into a sentiment method call:
 ```javascript
-var sentiment = require('sentiment');
+var sentiment = require('sentiment-polish');
 
 var result = sentiment('Cats are totally amazing!', {
     'cats': 5,
